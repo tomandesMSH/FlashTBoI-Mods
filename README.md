@@ -6,7 +6,7 @@ Lamb/Eternal DLC). Tick the mods you want, click **Install**, and play.
 
 | Mod | What it does | Repository |
 |---|---|---|
-| External Item Descriptions | Descriptions for items, trinkets, cards and pills (F2) | [Flash-EID](https://github.com/tomandesMSH/Flash-EID) |
+| External Item Descriptions | Descriptions for items, trinkets, cards and pills (F2) | [FlashTBoI-EID](https://github.com/tomandesMSH/FlashTBoI-EID) |
 | Stats HUD | Your current stats on the left side of the screen (F3) | [FlashTBoI-StatsHUD](https://github.com/tomandesMSH/FlashTBoI-StatsHUD) |
 | Debug Console | Repentance's debug console: `;` opens it (giveitem, spawn, goto, stage, debug, ...) | [FlashTBoI-DebugConsole](https://github.com/tomandesMSH/FlashTBoI-DebugConsole) |
 

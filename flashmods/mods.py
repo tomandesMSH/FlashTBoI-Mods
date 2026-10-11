@@ -13,7 +13,7 @@ MODS = [
         "id": "eid",
         "name": "External Item Descriptions",
         "description": "Shows what items, trinkets, cards and pills do when you walk up to them. F2 shows/hides it.",
-        "repo": "tomandesMSH/Flash-EID",
+        "repo": "tomandesMSH/FlashTBoI-EID",
         "zip_prefix": "EID_Flash_",
         "export": "eid_atlas",
     },
