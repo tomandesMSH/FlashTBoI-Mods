@@ -4,6 +4,7 @@
 <out>/flashplayer_32_sa.exe   Adobe's Flash Player 32 projector (downloaded, checksum verified)
 <out>/TBoI Flash Mods.exe     launcher, also usable as a Steam launch option
 <out>/mods.json               which mods (and versions) are installed
+<out>/game.txt                the game folder (the launcher sends Steam achievements with its FlashAchievements.exe)
 <out>/cache/                  game SWF read earlier, downloaded release zips
 """
 import hashlib
@@ -105,6 +106,10 @@ def install(mod_ids, game_dir, out_dir, log=print, source=None, get_proj=True):
     if get_proj:
         get_projector(out_dir, log)
     write_launcher(out_dir)
+    if os.path.exists(os.path.join(game_dir, "FlashAchievements.exe")):
+        # the launcher sends Steam achievements with the game's FlashAchievements.exe
+        with open(os.path.join(out_dir, "game.txt"), "w", encoding="utf-8") as f:
+            f.write(os.path.abspath(game_dir) + "\n")
     state = {"mods": {m["id"]: rel["version"] for m, rel, _ in payloads}, "game": game_dir}
     with open(os.path.join(out_dir, STATE), "w", encoding="utf-8") as f:
         json.dump(state, f, indent=1)

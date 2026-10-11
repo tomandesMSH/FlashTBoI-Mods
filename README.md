@@ -24,7 +24,7 @@ To play the normal game, clear the Steam launch option.
 
 No game files are distributed. Everything is built from your own copy of the game, and the installation in Steam's
 folder is never changed. The modded game uses the same save as the Steam version: don't run both at the same time.
-Steam achievements are granted the next time you start the normal version.
+Steam achievements you unlock are sent to Steam by the launcher a few seconds later (Steam must be running).
 
 ## How it works
 
