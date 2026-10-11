@@ -8,6 +8,7 @@ Lamb/Eternal DLC). Tick the mods you want, click **Install**, and play.
 |---|---|---|
 | External Item Descriptions | Descriptions for items, trinkets, cards and pills (F2) | [Flash-EID](https://github.com/tomandesMSH/Flash-EID) |
 | Stats HUD | Your current stats on the left side of the screen (F3) | [FlashTBoI-StatsHUD](https://github.com/tomandesMSH/FlashTBoI-StatsHUD) |
+| Debug Console | Repentance's debug console: `;` opens it (giveitem, spawn, goto, stage, debug, ...) | [FlashTBoI-DebugConsole](https://github.com/tomandesMSH/FlashTBoI-DebugConsole) |
 
 ## Usage
 
@@ -28,13 +29,13 @@ Steam achievements are granted the next time you start the normal version.
 ## How it works
 
 For each selected mod, the installer asks GitHub for the mod's latest release, downloads its release zip
-(`EID_Flash_<version>.zip`, `Stats_HUD_<version>.zip`) and reads only the payload in it (`*_payload.json`: the mod's
+(`EID_Flash_<version>.zip`, `Stats_HUD_<version>.zip`, `Debug_Console_<version>.zip`) and reads only the payload in it (`*_payload.json`: the mod's
 compiled ActionScript, its graphics and the game versions it was tested with). The mod's own patcher script in the
 zip is never run.
 
 The game SWF is read from a temporary copy of the game (the same method as the mods' own patchers) and kept in
 `cache/`, so changing the selection later doesn't start the game again. The payloads are inserted into frame 1 of
-the SWF, in a fixed order (EID, then Stats HUD), and the result is written as:
+the SWF, in a fixed order (EID, Stats HUD, Debug Console), and the result is written as:
 
 | File | |
 |---|---|

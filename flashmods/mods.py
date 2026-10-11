@@ -4,8 +4,8 @@ Each mod publishes GitHub releases with a zip (made by its tools/package.py) tha
 (`*_payload.json`: compiled code, bitmaps, game hashes). Only that JSON is used; the mod's own patcher script in the
 zip is never run.
 
-Order matters: EID Flash first, then Stats HUD. Both carry the same projector compatibility code, and Stats HUD's copy
-skips itself when EID Flash's is already there.
+Order matters: EID Flash first, then Stats HUD, then the Debug Console. They all carry the same projector
+compatibility code, and each later copy skips itself when an earlier one is already there.
 """
 
 MODS = [
@@ -24,6 +24,14 @@ MODS = [
         "repo": "tomandesMSH/FlashTBoI-StatsHUD",
         "zip_prefix": "Stats_HUD_",
         "export": "shud_atlas",
+    },
+    {
+        "id": "console",
+        "name": "Debug Console",
+        "description": "Repentance's debug console: press ; for giveitem, spawn, goto, stage, debug and more.",
+        "repo": "tomandesMSH/FlashTBoI-DebugConsole",
+        "zip_prefix": "Debug_Console_",
+        "export": "dcon_atlas",
     },
 ]
 
