@@ -12,7 +12,7 @@ Lamb/Eternal DLC). Tick the mods you want, click **Install**, and play.
 
 ## Usage
 
-1. Download `TBoI_Flash_Mods.exe` from the [latest release](https://github.com/tomandesMSH/TBoI-FlashMods/releases/latest), put it where you want to keep the modded game, and start it.
+1. Download `TBoI_Flash_Mods.exe` from the [latest release](https://github.com/tomandesMSH/FlashTBoI-Mods/releases/latest), put it where you want to keep the modded game, and start it.
    (Or with Python 3.8+: `python tboi_flash_mods.py`, no extra packages.)
 2. Check the game folder (found automatically for Steam), tick the mods, click **Install / update selected mods**.
    The first time, a game window appears for a few seconds while the game is read.
